@@ -9,6 +9,45 @@
     <!-- External Custom CSS -->
     <link rel="stylesheet" type="text/css" href="https://tigerlee0225.github.io/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Sans&display=swap" rel="stylesheet">
+    <style>
+        /* 호버 시 툴팁 스타일 */
+        .profile-link {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .profile-link:hover {
+            transform: translateY(-2px);
+        }
+
+        .profile-link:active {
+            transform: translateY(2px);
+        }
+
+        .profile-link::after {
+            content: "Linkedin 프로필 구경하러 가기";
+            position: absolute;
+            bottom: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .profile-link:hover::after {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
 </head>
 <body class="bg-light">
     <div class="container-fluid">
@@ -21,7 +60,7 @@
                     <p>이메일: yblee94@outlook.com</p>
                     <!-- Profile Image Section -->
                     <div class="text-center mt-4">
-                        <div class="border border-primary rounded p-3 mb-3" style="background-color: #e9ecef;">
+                        <div class="border border-primary rounded p-3 mb-3 profile-link" style="background-color: #e9ecef;">
                             <p style="font-size: 1.5rem; font-weight: bold; color: #007bff; margin-bottom: 0;">
                                 CLOUD NATIVE
                             </p>
@@ -114,8 +153,6 @@
         </div>
     </div>
     <!-- Bootstrap JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script> <!-- JavaScript 파일 연결 -->
 </body>
 </html>
