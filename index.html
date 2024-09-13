@@ -1,158 +1,206 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>이력서 - 이영범</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <!-- External Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="https://tigerlee0225.github.io/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Gowun+Sans&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://tigerlee0225.github.io/style.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gowun+Sans&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        /* 호버 시 툴팁 스타일 */
-        .profile-link {
-            position: relative;
-            display: inline-block;
-            cursor: pointer;
-            transition: transform 0.2s ease;
-        }
+      /* 호버 시 툴팁 스타일 */
+      .profile-link {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+      }
 
-        .profile-link:hover {
-            transform: translateY(-2px);
-        }
+      .profile-link:hover {
+        transform: translateY(-2px);
+      }
 
-        .profile-link:active {
-            transform: translateY(2px);
-        }
+      .profile-link:active {
+        transform: translateY(2px);
+      }
 
-        .profile-link::after {
-            content: "Linkedin 프로필 구경하러 가기";
-            position: absolute;
-            bottom: 110%;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #333;
-            color: #fff;
-            padding: 5px;
-            border-radius: 5px;
-            white-space: nowrap;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s;
-            font-size: 0.9rem;
-        }
+      .profile-link::after {
+        content: "Linkedin 프로필 구경하러 가기";
+        position: absolute;
+        bottom: 110%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+        white-space: nowrap;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s;
+        font-size: 0.9rem;
+      }
 
-        .profile-link:hover::after {
-            opacity: 1;
-            visibility: visible;
-        }
+      .profile-link:hover::after {
+        opacity: 1;
+        visibility: visible;
+      }
     </style>
-</head>
-<body class="bg-light">
+  </head>
+  <body class="bg-light">
     <div class="container-fluid">
-        <div class="row mt-5">
-            <!-- Left Sidebar (Profile) -->
-            <aside class="col-lg-3 col-md-4 col-sm-12 mb-4">
-                <div class="bg-white p-4 rounded shadow-sm">
-                    <h2 class="text-primary">이영범</h2>
-                    <p>연락처: 010-2890-6131</p>
-                    <p>이메일: yblee94@outlook.com</p>
-                    <!-- Profile Image Section -->
-                    <div class="text-center mt-4">
-                        <div class="border border-primary rounded p-3 mb-3 profile-link" style="background-color: #e9ecef;" onclick="openLinkedin()">
-                            <p style="font-size: 1.5rem; font-weight: bold; color: #007bff; margin-bottom: 0;">
-                                CLOUD NATIVE
-                            </p>
-                            <p style="font-size: 0.9rem; color: #007bff;">
-                                엔지니어에서 비즈니스 전문가로
-                            </p>
-                        </div>
-                        <img src="https://tigerlee0225.github.io/docs/assets/profile.jpg" alt="프로필 이미지" class="img-fluid rounded-circle">
-                    </div>
-                </div>
-            </aside>
+      <div class="row mt-5">
+        <!-- Left Sidebar (Profile) -->
+        <aside class="col-lg-3 col-md-4 col-sm-12 mb-4">
+          <div class="bg-white p-4 rounded shadow-sm">
+            <h2 class="text-primary">이영범</h2>
+            <p>연락처: 010-2890-6131</p>
+            <p>이메일: yblee94@outlook.com</p>
+            <!-- Profile Image Section -->
+            <div class="text-center mt-4">
+              <div
+                class="border border-primary rounded p-3 mb-3 profile-link"
+                style="background-color: #e9ecef"
+                onclick="openLinkedin()"
+              >
+                <p
+                  style="
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: #007bff;
+                    margin-bottom: 0;
+                  "
+                >
+                  CLOUD NATIVE
+                </p>
+                <p style="font-size: 0.9rem; color: #007bff">
+                  엔지니어에서 비즈니스 전문가로
+                </p>
+              </div>
+              <img
+                src="https://tigerlee0225.github.io/docs/assets/profile.jpg"
+                alt="프로필 이미지"
+                class="img-fluid rounded-circle"
+              />
+            </div>
+          </div>
+        </aside>
 
-            <!-- Main Content (Experience) -->
-            <main class="col-lg-6 col-md-8 col-sm-12 mb-4" style="margin-top: 0px;">
-                <section id="experience" class="bg-white p-4 rounded shadow-sm">
-                    <h2 class="section-title text-primary">경력</h2>
-                    <div class="d-flex align-items-start mb-3">
-                        <span class="period mr-3 text-muted">2024.08 ~ 현재</span>
-                        <div class="details">
-                            <h3 class="h5 mb-1 text-dark">(주) 구름</h3>
-                            <p class="mb-0">부서명: 구름 딥다이브 클라우드 네이티브 엔지니어링 1회차</p>
-                            <p>직책: 수강생</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start mb-3">
-                        <span class="period mr-3 text-muted">2023.07 ~ 2024.07</span>
-                        <div class="details">
-                            <h3 class="h5 mb-1 text-dark">(주)클로잇</h3>
-                            <p class="mb-0">부서명: 전략기획&클라우드컨설팅사업본부</p>
-                            <p>직책: 마케팅 책임</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start mb-3">
-                        <span class="period mr-3 text-muted">2023.01 ~ 2023.07</span>
-                        <div class="details">
-                            <h3 class="h5 mb-1 text-dark">(주)디지포머싸스랩</h3>
-                            <p class="mb-0">부서명: SaaSlab TF</p>
-                            <p>직책: Platform Marketer</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start mb-3">
-                        <span class="period mr-3 text-muted">2022.06 ~ 2022.11</span>
-                        <div class="details">
-                            <h3 class="h5 mb-1 text-dark">(주)판도라티비</h3>
-                            <p class="mb-0">부서명: Cobak Team</p>
-                            <p>직책: Business Development Manager</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start mb-3">
-                        <span class="period mr-3 text-muted">2019.01 ~ 2022.03</span>
-                        <div class="details">
-                            <h3 class="h5 mb-1 text-dark">(주)여기어때컴퍼니</h3>
-                            <p class="mb-0">부서명: 중소형호텔사업부</p>
-                            <p>직책: 광고상품영업</p>
-                        </div>
-                    </div>
-                </section>
-            </main>
+        <!-- Main Content (Experience) -->
+        <main class="col-lg-6 col-md-8 col-sm-12 mb-4" style="margin-top: 0px">
+          <section id="experience" class="bg-white p-4 rounded shadow-sm">
+            <h2 class="section-title text-primary">경력</h2>
+            <div class="d-flex align-items-start mb-3">
+              <span class="period mr-3 text-muted">2024.08 ~ 현재</span>
+              <div class="details">
+                <h3 class="h5 mb-1 text-dark">(주) 구름</h3>
+                <p class="mb-0">
+                  부서명: 구름 딥다이브 클라우드 네이티브 엔지니어링 1회차
+                </p>
+                <p>직책: 수강생</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-start mb-3">
+              <span class="period mr-3 text-muted">2023.07 ~ 2024.07</span>
+              <div class="details">
+                <h3 class="h5 mb-1 text-dark">(주)클로잇</h3>
+                <p class="mb-0">부서명: 전략기획&클라우드컨설팅사업본부</p>
+                <p>직책: 마케팅 책임</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-start mb-3">
+              <span class="period mr-3 text-muted">2023.01 ~ 2023.07</span>
+              <div class="details">
+                <h3 class="h5 mb-1 text-dark">(주)디지포머싸스랩</h3>
+                <p class="mb-0">부서명: SaaSlab TF</p>
+                <p>직책: Platform Marketer</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-start mb-3">
+              <span class="period mr-3 text-muted">2022.06 ~ 2022.11</span>
+              <div class="details">
+                <h3 class="h5 mb-1 text-dark">(주)판도라티비</h3>
+                <p class="mb-0">부서명: Cobak Team</p>
+                <p>직책: Business Development Manager</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-start mb-3">
+              <span class="period mr-3 text-muted">2019.01 ~ 2022.03</span>
+              <div class="details">
+                <h3 class="h5 mb-1 text-dark">(주)여기어때컴퍼니</h3>
+                <p class="mb-0">부서명: 중소형호텔사업부</p>
+                <p>직책: 광고상품영업</p>
+              </div>
+            </div>
+          </section>
+        </main>
 
-            <!-- Right Sidebar -->
-            <aside class="col-lg-3 col-md-4 col-sm-12">
-                <!-- Education Section -->
-                <section id="education" class="bg-white p-4 rounded shadow-sm mb-4">
-                    <h2 class="text-primary">학력</h2>
-                    <div class="details">
-                        <h3 class="h5 mb-1 text-dark">경기대학교</h3>
-                        <p>전공: 산업경영공학과</p>
-                        <p>학점: 3.47/4.5</p>
-                        <p>졸업: 2019년 2월</p>
-                    </div>
-                </section>
+        <!-- Right Sidebar -->
+        <aside class="col-lg-3 col-md-4 col-sm-12">
+          <!-- Education Section -->
+          <section id="education" class="bg-white p-4 rounded shadow-sm mb-4">
+            <h2 class="text-primary">학력</h2>
+            <div class="details">
+              <h3 class="h5 mb-1 text-dark">경기대학교</h3>
+              <p>전공: 산업경영공학과</p>
+              <p>학점: 3.47/4.5</p>
+              <p>졸업: 2019년 2월</p>
+            </div>
+          </section>
 
-                <!-- Skills Section -->
-                <section id="skills" class="bg-white p-4 rounded shadow-sm">
-                    <h2 class="text-primary">기술 스택</h2>
-                    <div class="d-flex flex-wrap">
-                        <span class="badge badge-pill badge-light p-2 mr-2 mb-2">Python</span>
-                        <span class="badge badge-pill badge-light p-2 mr-2 mb-2">Java</span>
-                        <span class="badge badge-pill badge-light p-2 mr-2 mb-2">C++</span>
-                        <span class="badge badge-pill badge-light p-2 mr-2 mb-2">Google Analytics</span>
-                        <span class="badge badge-pill badge-light p-2 mr-2 mb-2">Powerpoint</span>
-                        <span class="badge badge-pill badge-light p-2 mr-2 mb-2">Excel</span>
-                        <span class="badge badge-pill badge-light p-2 mr-2 mb-2">Meta Business Ads</span>
-                        <span class="badge badge-pill badge-light p-2 mr-2 mb-2">Google Ads</span>
-                        <span class="badge badge-pill badge-light p-2 mr-2 mb-2">Notion</span>
-                        <span class="badge badge-pill badge-light p-2 mr-2 mb-2">Slack</span>
-                    </div>
-                </section>
-            </aside>
-        </div>
+          <!-- Skills Section -->
+          <section id="skills" class="bg-white p-4 rounded shadow-sm">
+            <h2 class="text-primary">기술 스택</h2>
+            <div class="d-flex flex-wrap">
+              <span class="badge badge-pill badge-light p-2 mr-2 mb-2"
+                >Python</span
+              >
+              <span class="badge badge-pill badge-light p-2 mr-2 mb-2"
+                >Java</span
+              >
+              <span class="badge badge-pill badge-light p-2 mr-2 mb-2"
+                >C++</span
+              >
+              <span class="badge badge-pill badge-light p-2 mr-2 mb-2"
+                >Google Analytics</span
+              >
+              <span class="badge badge-pill badge-light p-2 mr-2 mb-2"
+                >Powerpoint</span
+              >
+              <span class="badge badge-pill badge-light p-2 mr-2 mb-2"
+                >Excel</span
+              >
+              <span class="badge badge-pill badge-light p-2 mr-2 mb-2"
+                >Meta Business Ads</span
+              >
+              <span class="badge badge-pill badge-light p-2 mr-2 mb-2"
+                >Google Ads</span
+              >
+              <span class="badge badge-pill badge-light p-2 mr-2 mb-2"
+                >Notion</span
+              >
+              <span class="badge badge-pill badge-light p-2 mr-2 mb-2"
+                >Slack</span
+              >
+            </div>
+          </section>
+        </aside>
+      </div>
     </div>
     <!-- Bootstrap JS, Popper.js, and jQuery -->
-    <script src="script.js"></script> <!-- JavaScript 파일 연결 -->
-</body>
+    <script src="script.js"></script>
+    <!-- JavaScript 파일 연결 -->
+  </body>
 </html>

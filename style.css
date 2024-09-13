@@ -1,86 +1,86 @@
 body {
-    font-family: 'Gowun Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.4;
-    color: #333;
+  font-family: "Gowun Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+  color: #333;
 }
 
 .intro {
-    font-style: italic;
-    font-weight: bold;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .period {
-    min-width: 140px; /* 기간과 텍스트 줄맞춤을 위해 넓이를 조정 */
-    color: #555;
-    font-weight: bold;
+  min-width: 140px; /* 기간과 텍스트 줄맞춤을 위해 넓이를 조정 */
+  color: #555;
+  font-weight: bold;
 }
 
 .details h3 {
-    margin-top: 0;
-    margin-bottom: 5px;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 .skill-badges .badge {
-    background-color: #f0f2f5;
-    padding: 10px 15px;
-    font-size: 14px;
+  background-color: #f0f2f5;
+  padding: 10px 15px;
+  font-size: 14px;
 }
 
 .bg-light {
-    background-color: #f8f8f8 !important;
+  background-color: #f8f8f8 !important;
 }
 
 p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 1.75rem; /* 타이틀 폰트 사이즈 조정 */
-    color: #007bff; /* 타이틀 색상 변경 */
-    margin-bottom: 1rem;
+  font-size: 1.75rem; /* 타이틀 폰트 사이즈 조정 */
+  color: #007bff; /* 타이틀 색상 변경 */
+  margin-bottom: 1rem;
 }
 
 .section-title {
-    margin-top: 0;
-    margin-bottom: 1rem; /* 경력 섹션 타이틀과 내용 사이 간격 조정 */
+  margin-top: 0;
+  margin-bottom: 1rem; /* 경력 섹션 타이틀과 내용 사이 간격 조정 */
 }
 
 .container-fluid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .row {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    align-items: flex-start; /* 상단 정렬로 설정 */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  align-items: flex-start; /* 상단 정렬로 설정 */
 }
 
 .col-lg-3,
 .col-lg-6 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* 각 섹션이 상단에 정렬되도록 설정 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* 각 섹션이 상단에 정렬되도록 설정 */
 }
 
 aside,
 main {
-    flex: 1;
+  flex: 1;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .border-primary {
-    border-color: #007bff !important;
+  border-color: #007bff !important;
 }
 
 aside + aside {
-    margin-top: 20px; /* 기술 스택 박스를 학력 박스 바로 아래에 배치 */
+  margin-top: 20px; /* 기술 스택 박스를 학력 박스 바로 아래에 배치 */
 }
